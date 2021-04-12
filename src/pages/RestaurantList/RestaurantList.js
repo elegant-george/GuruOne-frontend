@@ -55,7 +55,7 @@ const RestaurantList = (props) => {
                 {restaurants? restaurants.map(
                     restaurant => <RestaurantSimple
                                     key={restaurant._id}
-                                    imgSrc={`${process.env.REACT_APP_ASSET_URL}/${restaurant.coverPhoto}`}
+                                    imgSrc={`${restaurant.coverPhoto}`}
                                     rid={restaurant._id}
                                     rname={restaurant.name}
                                     rcontact={restaurant.contact}

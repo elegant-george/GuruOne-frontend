@@ -36,7 +36,7 @@ const User = (props) => {
                 <React.Fragment>
                     <div className={classes.UserProfile}>
                         <img className={classes.GridItem1} 
-                            src={`${process.env.REACT_APP_ASSET_URL}/${user.icon}`} 
+                            src={`${user.icon}`} 
                             alt="user icon" 
                             width="200"
                             height="200" />
@@ -62,7 +62,7 @@ const User = (props) => {
                                 {comment.description? <p>description: {comment.description}</p> : null}
                                 {comment.pictures? comment.pictures.map(picture => 
                                     <img key={picture} 
-                                        src={`${process.env.REACT_APP_ASSET_URL}/${picture}`} 
+                                        src={`${picture}`} 
                                         alt="" 
                                         width="100"
                                         height="100"/>) : null }

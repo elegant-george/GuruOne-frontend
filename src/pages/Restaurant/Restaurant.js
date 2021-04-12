@@ -57,7 +57,7 @@ const Restaurant = (props) => {
                 <React.Fragment>
                     <div className={classes.Restaurant}>
                         <img className={classes.GridItem1} 
-                            src={`${process.env.REACT_APP_ASSET_URL}/${restaurant.coverPhoto}`} 
+                            src={`${restaurant.coverPhoto}`} 
                             alt="" width="450"/>
                         <div className={classes.GridItem2}>
                             <FancyScore  score={restaurant.average === -1 ? 0 : restaurant.average.toFixed(1)}/>
@@ -69,10 +69,10 @@ const Restaurant = (props) => {
                         <p className={classes.GridItem5}>address: {restaurant.district + restaurant.address}</p>
                         <p className={classes.GridItem6}>about: {restaurant.about}</p>
                         <p className={classes.GridItem7}>menu: {restaurant.menu.map((menu_pic, i) =>
-                            <img key={`menu${i}`}src={`${process.env.REACT_APP_ASSET_URL}/${menu_pic}`} alt="menu" width="100"/>)}
+                            <img key={`menu${i}`}src={`${menu_pic}`} alt="menu" width="100"/>)}
                         </p>
                         <p className={classes.GridItem8}>pictures: {restaurant.pictures.map((pic, i) =>
-                            <img key={`pic${i}`}src={`${process.env.REACT_APP_ASSET_URL}/${pic}`} alt="" width="100" />)}
+                            <img key={`pic${i}`}src={`${pic}`} alt="" width="100" />)}
                         </p>
                     </div>
                     <div className={classes.RestaurantComments} >
