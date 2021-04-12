@@ -1,0 +1,32 @@
+.AddRestaurant {
+    margin: 4rem auto 0 auto;
+    width: 80%;
+    text-align: right;
+    button {
+        width: 8rem;
+        text-align: center;
+        border: 1px #dddddd;
+        border-style: solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        height: 2rem;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        background-color: #1b53eec2;
+        &:disabled{
+            color: rgba(255, 255, 255, 0.7);
+            background-color: #1b53ee60;
+          }
+    }
+}
+
+.RestaurantList {
+    width: 80%;
+    margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 600px) {
+    .RestaurantList, .AddRestaurant{
+        width: 500px;
+    }
+}

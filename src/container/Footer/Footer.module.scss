@@ -1,0 +1,19 @@
+.Footer {
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color:#e69c1398;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    z-index: 200;
+
+    p {
+        margin: 0 auto;
+    }
+}

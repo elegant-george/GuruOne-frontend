@@ -1,0 +1,39 @@
+.Header {
+    width: 100%;
+    background-color: #e69c1398;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .Toolbar{
+        height: 3rem;
+        width: 100%;
+        margin: 0 auto;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+        nav {
+            height: 100%;
+        }
+    
+        a {
+            height: 100%;
+        }
+    
+        img{
+            height: 100%;
+        }
+    }
+
+}
+
+@media (min-width: 600px) {
+    .Header{
+    .Toolbar{
+        width: 600px;
+    }
+}
+}

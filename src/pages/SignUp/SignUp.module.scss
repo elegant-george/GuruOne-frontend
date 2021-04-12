@@ -1,0 +1,10 @@
+.SignUp {
+    margin: 4rem auto;
+    width: 80%;
+}
+
+@media (min-width: 600px) {
+  .SignUp{
+      width: 500px;
+  }
+}

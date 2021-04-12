@@ -1,0 +1,28 @@
+.Comment{
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 1rem;
+
+    .Icon {
+        img{
+            max-width: 30%;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+    }
+
+    div{
+        width: 50%;
+        margin-left: 1rem;
+        margin-top: 0;
+    }
+
+    .Author {
+        margin-top: 0.5rem;
+    }
+
+    .Picture{
+        margin: 0.3rem;
+        max-width: 20%;
+    }
+}

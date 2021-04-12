@@ -1,0 +1,73 @@
+.ImageUpload {
+  
+  .Preview {
+    width: 6rem;
+    margin: 0 0.2rem;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    button {
+      font-size:1rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      left: 0;
+      top:0;
+      border-radius: 50%;
+      border: none;
+      background-color: #ccccccce;
+      color: white;
+    }
+  }
+
+  .AddImage {
+    width: 6rem;
+    margin: 0 0.2rem;
+    text-align: center;
+    border: 1px #dddddd;
+    border-style: solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 2rem;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 600;
+    background-color: #00000025;
+  }
+
+}
+
+.Center {
+  text-align: center;
+  .Preview {
+    display: contents;
+    img {
+      max-width: 90%;
+      width: 400px;
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  .Icon {
+    img {
+      width: 250px;
+      height: 250px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      border-radius: 50%;
+      max-width: 50vmin;
+      max-height: 50vmin;
+    }
+  }
+
+}

@@ -1,0 +1,23 @@
+.Auth {
+
+    .Submit {
+        width: 10rem;
+        margin: 1rem auto 0.2rem auto;
+        text-align: center;
+        border: 1px #dddddd;
+        border-style: solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+        height: 2.5rem;
+        color: rgba(0, 0, 0, 0.712);
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: #42dd135d;
+        position: relative;
+        left: calc(50% - 5rem);
+        &:disabled{
+          color: rgba(0, 0, 0, 0.123);
+          background-color: #42dd130e;
+        }
+    }
+}  
