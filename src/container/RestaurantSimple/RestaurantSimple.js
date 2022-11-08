@@ -12,8 +12,8 @@ const RestaurantSimple = (props) => {
         <div className={classes.RestaurantSimple}>
             <img className={classes.GridItem1} src={props.imgSrc} alt="restaurant icon" width="100" height="100"/>
             <div className={classes.GridItem2}>
-                <FancyScore  score={props.ramount === 0? 0 : props.rscore}/>
-                <p>{props.ramount === 0? "--" : props.rscore} out of 5</p>
+                <FancyScore  score={props.ramount === 0? 0 : props.rscore.toFixed(1)}/>
+                <p>{props.ramount === 0? "--" : props.rscore.toFixed(1)} out of 5</p>
                 <p>{props.ramount} reviews</p>
             </div>
             <NavLink className={classes.GridItem3} to={`/restaurant/${district}/${props.rid}/`} >
